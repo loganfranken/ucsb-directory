@@ -1,20 +1,4 @@
 var request = require('request');
-var prompt = require('prompt');
-
-prompt.start();
-
-var cleanedName = "";
-
-prompt.get(['name'], function (err, result) {
-	if (err) { return onErr(err); }
-	cleanedName = encodeURIComponent(result.name);
-	getUcsbDirectoryInfo(cleanedName).then(function(person) { console.log(person); });
-});
-
-function onErr(err) {
-	console.log(err);
-	return 1;
-}
 
 function getUcsbDirectoryInfo(name)
 {
@@ -39,3 +23,5 @@ function getUcsbDirectoryInfo(name)
 	});
 
 }
+
+module.exports = getUcsbDirectoryInfo;

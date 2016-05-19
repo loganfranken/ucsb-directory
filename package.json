@@ -1,24 +1,25 @@
 {
-  "name": "ucsbdirectory",
+  "name": "ucsb-directory",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Retrieves information from the UCSB directory",
+  "main": "ucsb-directory.js",
   "scripts": {
-    "start": "node main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/loganfranken/ucsbdirectory.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Logan Franken",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/loganfranken/ucsbdirectory/issues"
   },
   "homepage": "https://github.com/loganfranken/ucsbdirectory#readme",
   "dependencies": {
-    "prompt": "^0.2.14",
     "request": "^2.67.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "ucsb"
+  ]
 }
